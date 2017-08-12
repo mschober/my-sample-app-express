@@ -1,0 +1,11 @@
+version: '3'
+services:
+  sample-app:
+    build:
+      context: ./config
+      dockerfile: Dockerfile-App
+    ports:
+      - "80:3000"
+    volumes:
+      - .:/usr/src/app
+
